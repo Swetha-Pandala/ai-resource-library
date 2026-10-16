@@ -1,4 +1,17 @@
-# Initial package validation report
+# Library status and initial validation report
+
+## Latest fork verification
+
+Checked GitHub fork parent/source IDs against the catalog's stable repository IDs on 2026-10-16.
+
+- 24 catalog entries retained.
+- 21 existing forks confirmed and linked in the catalog, CSV, and category pages.
+- 3 pending: openai-agents-python, n8n, prefect. No matching public forks found; authenticated checks of expected repository names returned 404. This does not prove absence of inaccessible private repositories.
+- No forks created or changed by this verification.
+- Two additional public forks observed outside this catalog: bradautomates/claude-video and Graphify-Labs/graphify. These have not been imported into the original collection.
+- Initial publication validation completed successfully in GitHub Actions: https://github.com/Swetha-Pandala/ai-resource-library/actions/runs/38841576682
+
+The following section preserves the historical pre-publication package report. Its pending counts describe the original state, not the latest verification above.
 
 ## Delivery status
 This section records the initial local package checks before publication. The package is now being added to the central repository; live workflow results are available in its Actions tab.
