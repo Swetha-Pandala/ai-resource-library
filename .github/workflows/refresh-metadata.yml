@@ -1,0 +1,35 @@
+name: Refresh metadata
+on:
+  workflow_dispatch:
+  # Optional: enable after reviewing Actions quotas.
+  # schedule:
+  #   - cron: '17 13 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: catalog-writes
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python scripts/sync_metadata.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: python scripts/validate_repositories.py
+      - name: Commit refresh
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add catalog categories intake README.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh upstream metadata and generated indexes'
+            git push
+          fi

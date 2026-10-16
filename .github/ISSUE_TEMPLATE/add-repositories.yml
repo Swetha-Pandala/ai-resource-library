@@ -1,0 +1,12 @@
+name: Add repositories
+description: Submit GitHub repository URLs to the expandable catalog.
+title: '[Intake] Add repositories'
+body:
+  - type: textarea
+    id: urls
+    attributes:
+      label: Repository URLs
+      description: One HTTPS GitHub repository root URL per line. Owner submissions are imported automatically; forks remain pending until an authorized fork run.
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true

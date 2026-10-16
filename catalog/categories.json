@@ -1,0 +1,45 @@
+{
+  "ai-skills-mcp": {
+    "title": "AI Skills & MCP",
+    "keywords": [
+      "mcp",
+      "model context protocol",
+      "agent skills"
+    ]
+  },
+  "ai-applications": {
+    "title": "Complete AI Applications",
+    "keywords": [
+      "ai application",
+      "knowledge base"
+    ]
+  },
+  "multi-agent-systems": {
+    "title": "Agent Frameworks & Multi-Agent Systems",
+    "keywords": [
+      "agent framework",
+      "multi-agent",
+      "multiagent"
+    ]
+  },
+  "automations-apis": {
+    "title": "Automation, APIs & Data Extraction",
+    "keywords": [
+      "workflow automation",
+      "web scraping",
+      "data orchestration"
+    ]
+  },
+  "llm-gateways-devtools": {
+    "title": "LLM Gateways & Developer Tools",
+    "keywords": [
+      "llm gateway",
+      "proxy",
+      "developer tool"
+    ]
+  },
+  "other": {
+    "title": "Needs Classification Review",
+    "keywords": []
+  }
+}

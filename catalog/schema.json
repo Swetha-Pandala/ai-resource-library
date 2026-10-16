@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "original_url",
+      "upstream_topics",
+      "fork_error",
+      "readme_error",
+      "aliases",
+      "fork_status",
+      "compatible_ai_tools",
+      "last_verified",
+      "license_url",
+      "date_added",
+      "category",
+      "fork_url",
+      "installation_requirements",
+      "upstream_changed",
+      "readme_excerpt",
+      "id",
+      "tags",
+      "documentation_url",
+      "upstream_description",
+      "upstream_pushed_at",
+      "metadata_error",
+      "canonical_url",
+      "fork_outcome",
+      "description",
+      "license",
+      "readme_url",
+      "language",
+      "use_cases",
+      "status",
+      "name",
+      "classification_status",
+      "previous_names",
+      "last_attempted",
+      "technologies",
+      "notes"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "original_url": {
+        "type": "string"
+      },
+      "canonical_url": {
+        "type": "string"
+      },
+      "date_added": {
+        "type": "string"
+      },
+      "notes": {
+        "type": "string"
+      },
+      "fork_url": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "fork_error": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "description": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "upstream_description": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "license": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "license_url": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "language": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "last_verified": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "last_attempted": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "readme_url": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "documentation_url": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "readme_excerpt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "readme_error": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "metadata_error": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "upstream_pushed_at": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "fork_outcome": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "classification_evidence": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "aliases": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "upstream_topics": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "technologies": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "compatible_ai_tools": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "use_cases": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "installation_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "previous_names": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "id": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "category": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "status": {
+        "enum": [
+          "active",
+          "archived",
+          "unavailable",
+          "unverified"
+        ]
+      },
+      "fork_status": {
+        "enum": [
+          "pending",
+          "confirmed",
+          "failed"
+        ]
+      },
+      "classification_status": {
+        "enum": [
+          "needs_review",
+          "suggested",
+          "reviewed"
+        ]
+      },
+      "upstream_changed": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+}

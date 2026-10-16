@@ -1,0 +1,11 @@
+# Automation, APIs &amp; Data Extraction
+
+5 repositories. [All categories](../../README.md).
+
+| Repository | Description | Fork | License | Tags | Status |
+| --- | --- | --- | --- | --- | --- |
+| [activepieces](https://github.com/activepieces/activepieces) | AI Agents &amp; MCPs &amp; AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows &amp; AI Agents • MCPs for AI Agents | pending | NOASSERTION | ai-agent, ai-agent-tools, ai-agents, ai-agents-framework, mcp, mcp-server, mcp-tools, mcps, n8n-alternative, no-code-automation, workflow, workflow-automation, workflows | active |
+| [n8n](https://github.com/n8n-io/n8n) | Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. | pending | NOASSERTION | ai, apis, automation, cli, data-flow, development, integration-framework, integrations, ipaas, low-code, low-code-platform, mcp, mcp-client, mcp-server, n8n, no-code, self-hosted, typescript, workflow, workflow-automation | active |
+| [prefect](https://github.com/PrefectHQ/prefect) | Prefect is a workflow orchestration framework for building resilient data pipelines in Python. | pending | Apache-2.0 | automation, data, data-engineering, data-ops, data-science, infrastructure, ml-ops, observability, orchestration, pipeline, prefect, python, workflow, workflow-engine | active |
+| [public-apis](https://github.com/public-apis/public-apis) | A collective list of free APIs | pending | MIT | api, apis, dataset, development, free, list, lists, open-source, public, public-api, public-apis, resources, software | active |
+| [Scrapegraph-ai](https://github.com/ScrapeGraphAI/Scrapegraph-ai) | Python scraper based on AI | pending | MIT | ai-crawler, ai-scraping, ai-search, crawler, data-extraction, firecrawl-alternative, large-language-model, llm, markdown, rag, scraping, scraping-python, web-crawler, web-crawlers, web-data, web-data-extraction, web-scraper, web-scraping, web-search, webscraping | active |
