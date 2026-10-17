@@ -5,14 +5,16 @@
       "mcp",
       "model context protocol",
       "agent skills"
-    ]
+    ],
+    "description": "Agent skills, MCP integrations, and assistant extensions"
   },
   "ai-applications": {
     "title": "Complete AI Applications",
     "keywords": [
       "ai application",
       "knowledge base"
-    ]
+    ],
+    "description": "Research assistants, knowledge tools, and RAG platforms"
   },
   "multi-agent-systems": {
     "title": "Agent Frameworks & Multi-Agent Systems",
@@ -20,7 +22,8 @@
       "agent framework",
       "multi-agent",
       "multiagent"
-    ]
+    ],
+    "description": "Stateful orchestration, agent collaboration, and handoffs"
   },
   "automations-apis": {
     "title": "Automation, APIs & Data Extraction",
@@ -28,7 +31,8 @@
       "workflow automation",
       "web scraping",
       "data orchestration"
-    ]
+    ],
+    "description": "Workflow automation, API discovery, and data extraction"
   },
   "llm-gateways-devtools": {
     "title": "LLM Gateways & Developer Tools",
@@ -36,10 +40,12 @@
       "llm gateway",
       "proxy",
       "developer tool"
-    ]
+    ],
+    "description": "Model routing, code intelligence, and developer utilities"
   },
   "other": {
     "title": "Needs Classification Review",
-    "keywords": []
+    "keywords": [],
+    "description": "Resources awaiting a clear category assignment"
   }
 }

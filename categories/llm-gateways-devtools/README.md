@@ -1,9 +1,10 @@
 # LLM Gateways &amp; Developer Tools
 
-3 repositories. [All categories](../../README.md).
+4 repositories. [All categories](../../README.md).
 
 | Repository | Description | Fork | License | Tags | Status |
 | --- | --- | --- | --- | --- | --- |
 | [freellmapi](https://github.com/tashfeenahmed/freellmapi) | 7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only. | [Fork](https://github.com/Swetha-Pandala/freellmapi) | MIT | Unknown | active |
+| [graphify](https://github.com/Graphify-Labs/graphify) | Map source code and project documents into a queryable knowledge graph for coding assistants. | [Fork](https://github.com/Swetha-Pandala/graphify) | Apache-2.0 | knowledge-graph, code-intelligence, developer-productivity, ai-agents, antigravity, ast, claude-code, code-analysis, code-search, codex, cursor, developer-tools, gemini, graphify, graphrag, knowledge-graph, leiden, llm, mcp, openclaw, rag, skills, tree-sitter | active |
 | [OmniRoute](https://github.com/diegosouzapw/OmniRoute) | Never stop coding. Free MIT AI gateway: one endpoint, 359 providers (150+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by hundreds of contributors | [Fork](https://github.com/Swetha-Pandala/OmniRoute) | MIT | a2a, ai-agents, ai-gateway, anthropic, claude, claude-code, cline, codex, copilot, cursor, deepseek, free-ai, gemini, kimi, llm-gateway, mcp, openai, openai-proxy, qwen, token-saver | active |
 | [rea](https://github.com/morluto/rea) | Reverse engineer anything with agents, from app behavior down to native binaries. | [Fork](https://github.com/Swetha-Pandala/rea) | MIT | agent-skills, ai-agents, binary-analysis, claude-code, cli, codex, cordis, decompiler, developer-tools, dsh, dsh-plugin, ghidra, hopper, llm, mcp, model-context-protocol, rea, reverse-engineering, static-analysis, touhou | active |

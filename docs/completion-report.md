@@ -1,17 +1,18 @@
 # Library status and initial validation report
 
-## Latest fork verification
+## Latest catalog and fork verification
 
-Checked GitHub fork parent/source IDs against the catalog's stable repository IDs on 2026-10-16.
+Verified all 26 catalog entries against the parent/source IDs of public forks owned by Swetha-Pandala on 2026-10-17 UTC (2026-10-16 Eastern).
 
-- 24 catalog entries retained.
-- 21 existing forks confirmed and linked in the catalog, CSV, and category pages.
-- 3 pending: openai-agents-python, n8n, prefect. No matching public forks found; authenticated checks of expected repository names returned 404. This does not prove absence of inaccessible private repositories.
-- No forks created or changed by this verification.
-- Two additional public forks observed outside this catalog: bradautomates/claude-video and Graphify-Labs/graphify. These have not been imported into the original collection.
-- Initial publication validation completed successfully in GitHub Actions: https://github.com/Swetha-Pandala/ai-resource-library/actions/runs/38841576682
+- 26 repository records: the original 24 plus bradautomates/claude-video and Graphify-Labs/graphify.
+- 26 confirmed fork links; zero pending or failed forks.
+- claude-video: AI Skills & MCP; graphify: LLM Gateways & Developer Tools.
+- Both additions have GitHub metadata, license identifiers, README-based classification, compatibility notes, and suggested use cases.
+- README redesigned with navigation, validation badge, generated counts, category summaries, search instructions, and attribution.
+- README presentation is maintained in docs/templates/README.md.template so future generation preserves the design.
+- No fork contents changed, and no collected projects were installed or executed.
 
-The following section preserves the historical pre-publication package report. Its pending counts describe the original state, not the latest verification above.
+The following is the historical initial-package report; its counts and publication status describe the original delivery, not the current catalog above.
 
 ## Delivery status
 This section records the initial local package checks before publication. The package is now being added to the central repository; live workflow results are available in its Actions tab.

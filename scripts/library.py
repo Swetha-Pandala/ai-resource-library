@@ -223,7 +223,28 @@ def generated_files(rows,cats):
            'See [setup and intake](docs/how-to-add.md), [usage](docs/how-to-use.md), [maintenance](docs/maintenance.md), and [licensing](docs/licensing.md).','',
            '## Attribution','', 'All linked projects belong to their upstream authors. Forking does not change their licenses or grant additional reuse rights. Unknown and NOASSERTION licenses require review.','',
            'Generated from `catalog/repositories.json`; edit the catalog, not generated tables.']
-    output['README.md']='\n'.join(home)+'\n';return output
+    template_path = Path(__file__).resolve().parents[1] / 'docs/templates/README.md.template'
+    if template_path.exists():
+        table = ['| Collection | Focus | Resources |', '| :--- | :--- | ---: |']
+        for key, cat in cats.items():
+            count = sum(r['category'] == key for r in rows)
+            table.append(f'| [{md(cat["title"])}](categories/{key}/README.md) | {md(cat.get("description") or cat["title"])} | **{count}** |')
+        values = {
+            'TOTAL': str(len(rows)),
+            'FORKS': str(sum(r['fork_status'] == 'confirmed' for r in rows)),
+            'UNCONFIRMED': str(sum(r['fork_status'] != 'confirmed' for r in rows)),
+            'CATEGORIES': str(len({r['category'] for r in rows})),
+            'REVIEW': str(sum(r.get('classification_status') != 'reviewed' for r in rows)),
+            'VERIFIED': verified,
+            'CATEGORY_TABLE': '\n'.join(table),
+        }
+        rendered = template_path.read_text()
+        for key, value in values.items():
+            rendered = rendered.replace('{{' + key + '}}', value)
+        output['README.md'] = rendered
+    else:
+        output['README.md']='\n'.join(home)+'\n'
+    return output
 
 def generate():
     for name,content in generated_files(load('catalog/repositories.json',[]),load('catalog/categories.json',DEFAULT_CATEGORIES)).items():

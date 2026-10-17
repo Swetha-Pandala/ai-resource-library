@@ -1,30 +1,127 @@
+<div align="center">
+
 # AI Resource Library
 
-A curated, continuously expandable collection of AI skills, MCP servers, agents, applications, automation tools, and open-source developer resources.
+### Discover thoughtfully. Build with purpose.
 
-Maintained by Swetha-Pandala. Upstream code is not copied or executed.
+A curated, continuously expandable collection of AI skills, MCP servers, agents,<br>
+applications, automation tools, and open-source developer resources.
 
-**Repositories: 24 · Last successful metadata verification: 2026-10-16T01:50:32+00:00**
+**Curated by [Swetha Pandala](https://github.com/Swetha-Pandala)**
 
-Search [the CSV catalog](catalog/repositories.csv) or use `python scripts/search.py QUERY`. Category pages contain full repository tables.
+[![Catalog validation](https://github.com/Swetha-Pandala/ai-resource-library/actions/workflows/validate.yml/badge.svg)](https://github.com/Swetha-Pandala/ai-resource-library/actions/workflows/validate.yml)
+![Resources](https://img.shields.io/badge/resources-26-7C3AED?style=flat-square)
+![Verified forks](https://img.shields.io/badge/confirmed_forks-26-0891B2?style=flat-square)
+![Populated categories](https://img.shields.io/badge/categories-5-475569?style=flat-square)
 
-| Category | Repositories |
-| --- | ---: |
-| [AI Skills &amp; MCP](categories/ai-skills-mcp/README.md) | 8 |
-| [Complete AI Applications](categories/ai-applications/README.md) | 4 |
-| [Agent Frameworks &amp; Multi-Agent Systems](categories/multi-agent-systems/README.md) | 4 |
-| [Automation, APIs &amp; Data Extraction](categories/automations-apis/README.md) | 5 |
-| [LLM Gateways &amp; Developer Tools](categories/llm-gateways-devtools/README.md) | 3 |
-| [Needs Classification Review](categories/other/README.md) | 0 |
+[Explore the collection](#explore-the-collection) · [Search the catalog](catalog/repositories.csv) · [Add a resource](https://github.com/Swetha-Pandala/ai-resource-library/issues/new?template=add-repositories.yml) · [Usage guide](docs/how-to-use.md)
 
-## Add resources
+</div>
 
-Submit the **Add repositories** issue form, or run `python scripts/add_repositories.py --file links.txt`. Only owner-authored issues are processed automatically. New chat messages do not trigger Actions.
+---
 
-See [setup and intake](docs/how-to-add.md), [usage](docs/how-to-use.md), [maintenance](docs/maintenance.md), and [licensing](docs/licensing.md).
+## A practical library for the next idea
 
-## Attribution
+Useful tools are easy to discover and easy to lose track of. This library keeps them organized in one place—with upstream links, confirmed personal forks, license metadata, and notes about where each project could fit.
 
-All linked projects belong to their upstream authors. Forking does not change their licenses or grant additional reuse rights. Unknown and NOASSERTION licenses require review.
+The collection spans agent development, retrieval applications, workflow automation, model gateways, and developer tooling. It is built to grow as new resources are discovered, while keeping earlier entries and personal notes intact.
 
-Generated from `catalog/repositories.json`; edit the catalog, not generated tables.
+**Collect now. Understand the options. Reuse when the right project comes along.**
+
+## Explore the collection
+
+| Collection | Focus | Resources |
+| :--- | :--- | ---: |
+| [AI Skills &amp; MCP](categories/ai-skills-mcp/README.md) | Agent skills, MCP integrations, and assistant extensions | **9** |
+| [Complete AI Applications](categories/ai-applications/README.md) | Research assistants, knowledge tools, and RAG platforms | **4** |
+| [Agent Frameworks &amp; Multi-Agent Systems](categories/multi-agent-systems/README.md) | Stateful orchestration, agent collaboration, and handoffs | **4** |
+| [Automation, APIs &amp; Data Extraction](categories/automations-apis/README.md) | Workflow automation, API discovery, and data extraction | **5** |
+| [LLM Gateways &amp; Developer Tools](categories/llm-gateways-devtools/README.md) | Model routing, code intelligence, and developer utilities | **4** |
+| [Needs Classification Review](categories/other/README.md) | Resources awaiting a clear category assignment | **0** |
+
+Each category opens a dedicated index with descriptions, upstream repositories, fork links, licenses, tags, and availability status. The homepage stays compact as the collection grows.
+
+## Find your starting point
+
+| What you want to do | Where to look |
+| :--- | :--- |
+| Give an assistant new skills or connect it to tools | [AI Skills & MCP](categories/ai-skills-mcp/README.md) |
+| Explore a complete research or knowledge assistant | [Complete AI Applications](categories/ai-applications/README.md) |
+| Build stateful agents, handoffs, or coordinated workflows | [Agent Frameworks & Multi-Agent Systems](categories/multi-agent-systems/README.md) |
+| Connect services, orchestrate pipelines, or extract data | [Automation, APIs & Data Extraction](categories/automations-apis/README.md) |
+| Route model requests or investigate developer tools | [LLM Gateways & Developer Tools](categories/llm-gateways-devtools/README.md) |
+
+### Search in seconds
+
+Browse the [CSV catalog](catalog/repositories.csv) on GitHub, inspect the [structured JSON](catalog/repositories.json), or search a local checkout:
+
+```bash
+python scripts/search.py "rag"
+python scripts/search.py "Claude"
+python scripts/search.py "Python"
+```
+
+Search includes descriptions, categories, tags, and saved notes. No external project needs to be installed to browse this library.
+
+## Add the next discovery
+
+**On GitHub:** open the [Add repositories form](https://github.com/Swetha-Pandala/ai-resource-library/issues/new?template=add-repositories.yml), paste one or more repository URLs, and submit from the owner's account. The intake workflow retrieves metadata and updates the catalog and generated indexes.
+
+**From a local checkout:** put repository URLs in `links.txt`, one per line, then run:
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/add_repositories.py --file links.txt
+python scripts/validate_repositories.py
+```
+
+Review and commit the resulting changes. See the [complete intake guide](docs/how-to-add.md) for setup, permissions, retries, and fork management.
+
+> Repeated submissions update existing records using stable GitHub IDs. New categories can be added without rebuilding the library. Ambiguous classifications are held for review.
+
+## Organized for long-term use
+
+| Part of the library | Purpose |
+| :--- | :--- |
+| [`catalog/`](catalog/) | Authoritative repository records, category definitions, schema, and CSV export |
+| [`categories/`](categories/) | Focused, automatically generated resource indexes |
+| [`intake/`](intake/) | Pending submissions, completed imports, and recorded failures |
+| [`scripts/`](scripts/) | Intake, metadata refresh, classification, fork verification, search, and generation |
+| [`.github/workflows/`](.github/workflows/) | Catalog validation, owner-submitted intake, and manual metadata refresh |
+| [`docs/`](docs/) | Usage, maintenance, licensing, and verification notes |
+
+One catalog drives the README, category pages, and CSV. Metadata refreshes preserve custom descriptions, tags, and notes. Renames and ownership transfers are tracked by repository ID, and unavailable projects retain their historical records.
+
+## Collection status
+
+| Measure | Current catalog |
+| :--- | ---: |
+| Resources cataloged | **26** |
+| Confirmed personal forks | **26** |
+| Pending or failed forks | **0** |
+| Populated categories | **5** |
+| Classifications awaiting review | **0** |
+
+**Most recent successful metadata check:** 2026-10-17T03:13:29+00:00. Individual records retain their own verification dates; this is not a claim that every entry was checked at that time. Fork links reflect the last successful fork verification and may change upstream.
+
+Catalog checks run on pushes and pull requests. Metadata refresh is manually triggered by default; a recurring schedule is optional. Fork creation is a separate authenticated operation, and upstream code is never automatically merged into personal forks. New chat messages do not trigger GitHub Actions on their own.
+
+## Use with context. Credit the creators.
+
+This is a resource collection, not a claim of authorship or an endorsement of every project. All linked software belongs to its original maintainers. Before reuse, review the project's current documentation, dependencies, and license—including any module-specific or commercial restrictions.
+
+A public repository or personal fork does not grant extra reuse rights. Missing and `NOASSERTION` license values are flagged for review. The [MIT license](LICENSE) covers this library's original code and documentation; upstream projects retain their own terms.
+
+**Documentation:** [How to use](docs/how-to-use.md) · [How to add](docs/how-to-add.md) · [Maintenance](docs/maintenance.md) · [Licensing](docs/licensing.md) · [Contributing](CONTRIBUTING.md)
+
+---
+
+<div align="center">
+
+**A growing reference shelf for building intelligent systems.**
+
+[Swetha Pandala](https://github.com/Swetha-Pandala) · [LinkedIn](https://www.linkedin.com/in/swetha-pandala/)
+
+</div>
+
+<!-- Generated from catalog/repositories.json and docs/templates/README.md.template. Edit the template or catalog, then run python scripts/generate_readme.py. -->

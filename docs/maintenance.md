@@ -17,3 +17,7 @@ Progress is saved after each repository. Retries are bounded; waits over 60 seco
 Refresh is manually dispatched by default. Uncomment its weekly schedule only if wanted and within your quotas. Intake does not automatically create forks; use the authenticated fork command. Validation runs within each write workflow because bot-token commits may not trigger a second workflow.
 
 No source code from cataloged projects is executed. Issue bodies are parsed from the event file and never interpolated into shell code. Only owner-authored intake issues run. There are no PR-target privileged workflows. Review all changes to scripts/workflows before merging third-party PRs. Never execute arbitrary code taken from a catalog README.
+
+## README presentation
+
+Edit `docs/templates/README.md.template` to change the main README design. The generator fills totals, status counts, and category navigation from the catalog. Category focus descriptions live in `catalog/categories.json`. Run generation and validation after changing either; do not edit the generated README directly.
